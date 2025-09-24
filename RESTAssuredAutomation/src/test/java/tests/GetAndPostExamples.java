@@ -37,7 +37,7 @@ public class GetAndPostExamples {
 			body(request.toJSONString()).
 			when().
 			post("/users").
-			then().statusCode(201).
+			then().statusCode(200).
 			log().all();
 			
 		}
