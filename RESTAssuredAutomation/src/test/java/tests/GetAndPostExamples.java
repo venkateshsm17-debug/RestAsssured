@@ -39,7 +39,7 @@ public class GetAndPostExamples {
 			post("/users").
 			then().statusCode(201).
 			log().all();
-			
+			//System.out.println("Test");
 		}
 	
 }
