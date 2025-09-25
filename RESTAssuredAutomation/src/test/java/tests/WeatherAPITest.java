@@ -27,7 +27,7 @@ public class WeatherAPITest {
 		baseURI= "https://api.openweathermap.org/data/2.5";
 		given().get("/weather?lat=12.971599&lon=77.594566&appid=626358824e2dddc5bf5828341a6ba89a")
 		.then().statusCode(200)
-		.body("name",equalTo("Bengaluru"))//"id",equalTo(1277333))
+		.body("name",equalTo("Bengaluru"))//"id",equalTo(1277333))//("clouds.all",equalTo(40))
 		.log().all();
 
 		
